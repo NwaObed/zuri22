@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #C6DCE4;
+    display: flex;
+    place-content: center;
+    height: 100vh; 
+    
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    'red-div red-div yellow-div'
+    'green-div blue-div blue-div';
+    gap: 10px;
+    width: 75%;
+    margin: auto;
+}
+
+.red{
+    background-color: red;
+    grid-area: red-div;
+    height: 200px;
+}
+
+.green{
+    background-color: green;
+    grid-area: green-div;
+    height: 200px;
+}
+
+.yellow{
+    background-color: yellow;
+    grid-area: yellow-div;
+}
+
+.blue1{
+    background-color: blue;
+    grid-area: blue1-div;
+}
+
+.blue2{
+    background-color: blue;
+    grid-area: blue2-div;
+}
+
+.blue{
+    display: grid;
+    grid-template-areas:
+     'blue1-div'
+     'blue2-div';
+    grid-area: blue-div;
+    gap: 10px;
+    height: 200px;
+}
+
